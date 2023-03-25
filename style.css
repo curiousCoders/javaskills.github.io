@@ -1,0 +1,24 @@
+/* This is a comment. It will be ignored by the browser. */
+
+/* Set the background color of the body to light gray. */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Center the content on the page. */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the heading and paragraph elements. */
+h1 {
+  font-size: 36px;
+  color: #333333;
+}
+
+p {
+  font-size: 18px;
+  color: #666666;
+}
