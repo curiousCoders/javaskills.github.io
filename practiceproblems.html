@@ -1,1 +1,66 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaSkills - Practice Problems</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+	<header>
+		<h1>Practice Problems</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="studyguides.html">Study Guides</a>
+			<a href="practiceproblems.html">Practice Problems</a>
+		</nav>
+	</header>
+	<main>
+		<h2>Problem 1: Sum of Two Numbers</h2>
+		<p>Write a Java program that asks the user to enter two integers, and then prints the sum of those two numbers.</p>
+		<pre><code>import java.util.Scanner;
+
+public class SumOfTwoNumbers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = input.nextInt();
+
+        int sum = num1 + num2;
+
+        System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+    }
+}
+		</code></pre>
+		<h2>Problem 2: Factorial of a Number</h2>
+		<p>Write a Java program that calculates the factorial of a given number. The factorial of a number is the product of all integers from 1 to that number.</p>
+		<pre><code>import java.util.Scanner;
+
+public class Factorial {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a positive integer: ");
+        int num = input.nextInt();
+
+        long factorial = 1;
+
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+
+        System.out.println("The factorial of " + num + " is " + factorial);
+    }
+}
+		</code></pre>
+	</main>
+	<footer>
+		<p>&copy; 2023 JavaSkills.io</p>
+	</footer>
+    </div>
+</body>
+</html>
