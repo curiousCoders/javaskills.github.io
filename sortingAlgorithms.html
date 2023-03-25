@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaSkills.io - Sorting Algorithms</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<header>
+		<h1>JavaSkills.io</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="studyguides.html">Study Guides</a></li>
+				<li><a href="practiceproblems.html">Practice Problems</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Sorting Algorithms</h2>
+		<p>In computer science, sorting is the process of arranging data in a particular order. Here are some common sorting algorithms:</p>
+		<h3>Bubble Sort</h3>
+		<p>Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.</p>
+		<pre><code>public static void bubbleSort(int[] arr) {
+    int n = arr.length;
+    for (int i = 0; i &lt; n-1; i++) {
+        for (int j = 0; j &lt; n-i-1; j++) {
+            if (arr[j] &gt; arr[j+1]) {
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}</code></pre>
+		<h3>Selection Sort</h3>
+		<p>Selection sort is a simple sorting algorithm that repeatedly finds the minimum element from the unsorted part of the array and puts it at the beginning.</p>
+		<pre><code>public static void selectionSort(int[] arr) {
+    int n = arr.length;
+    for (int i = 0; i &lt; n-1; i++) {
+        int minIndex = i;
+        for (int j = i+1; j &lt; n; j++) {
+            if (arr[j] &lt; arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        int temp = arr[minIndex];
+        arr[minIndex] = arr[i];
+        arr[i] = temp;
+    }
+}</code></pre>
+		<h3>Insertion Sort</h3>
+		<p>Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time.</p>
+		<pre><code>public static void insertionSort(int[] arr) {
+    int n = arr.length;
+    for (int i = 1; i &lt; n; ++i) {
+        int key = arr[i];
+        int j = i - 1;
+
+        while (j &gt;= 0 && arr[j] &gt; key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}</code></pre>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2023 JavaSkills.io</p>
+	</footer>
+  </div>
+</body>
+</html>
