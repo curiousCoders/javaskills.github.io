@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaSkills - Classes and Objects</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+	<header>
+		<h1>Classes and Objects</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="studyguides.html">Study Guides</a>
+			<a href="practiceproblems.html">Practice Problems</a>
+		</nav>
+	</header>
+	<main>
+		<h2>What are Classes and Objects in Java?</h2>
+		<p>Classes and objects are fundamental concepts in object-oriented programming. A class is a blueprint for creating objects, which are instances of the class. Each object has its own set of attributes (also known as instance variables) and behaviors (also known as methods). In Java, a class is defined using the <code>class</code> keyword, followed by the class name and the class body enclosed in curly braces:</p>
+		<pre><code>public class Person {
+    // instance variables
+    private String name;
+    private int age;
+    
+    // constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // methods
+    public void sayHello() {
+        System.out.println("Hello, my name is " + name + " and I am " + age + " years old.");
+    }
+}</code></pre>
+		<p>In this example, we have defined a <code>Person</code> class with two instance variables (<code>name</code> and <code>age</code>), a constructor that takes in a name and an age, and a <code>sayHello</code> method that prints a greeting using the instance variables.</p>
+		<h2>Creating Objects in Java</h2>
+		<p>Once we have defined a class, we can create objects of that class using the <code>new</code> keyword:</p>
+		<pre><code>Person alice = new Person("Alice", 25);
+alice.sayHello();
+
+Person bob = new Person("Bob", 30);
+bob.sayHello();</code></pre>
+		<p>In this example, we have created two <code>Person</code> objects, <code>alice</code> and <code>bob</code>, and called the <code>sayHello</code> method on each of them.</p>
+	</main>
+	<footer>
+		<p>&copy; 2023 JavaSkills.io</p>
+	</footer>
+  </div>
+</body>
+</html>
