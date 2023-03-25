@@ -22,3 +22,12 @@ p {
   font-size: 18px;
   color: #666666;
 }
+
+code {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #333;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0.2em 0.4em;
+}
